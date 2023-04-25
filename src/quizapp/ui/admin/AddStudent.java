@@ -108,7 +108,7 @@ public class AddStudent extends javax.swing.JFrame {
         submit.setBounds(240, 250, 120, 40);
 
         background.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizapp/ui/admin/addStudent-page.jpg"))); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizapp/ui/admin/Quiz_app_bg.jpg"))); // NOI18N
         background.setMaximumSize(new java.awt.Dimension(480, 360));
         background.setMinimumSize(new java.awt.Dimension(480, 360));
         background.setPreferredSize(new java.awt.Dimension(480, 360));

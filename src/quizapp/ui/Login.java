@@ -12,6 +12,8 @@ import repositories.StudentRepository;
 import services.AdminService;
 import services.StudentService;
 
+import java.awt.*;
+
 /**
  *
  * @author x
@@ -50,33 +52,33 @@ public class Login extends javax.swing.JFrame {
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(480, 360));
-        setMinimumSize(new java.awt.Dimension(480, 360));
+        setMaximumSize(new java.awt.Dimension(480*2, 360*2));
+        setMinimumSize(new java.awt.Dimension(480*2, 360*2));
 
-        jPanel1.setMaximumSize(new java.awt.Dimension(480, 360));
-        jPanel1.setMinimumSize(new java.awt.Dimension(480, 360));
+        jPanel1.setMaximumSize(new java.awt.Dimension(480*2, 360*2));
+        jPanel1.setMinimumSize(new java.awt.Dimension(480*2, 360*2));
         jPanel1.setName(""); // NOI18N
         jPanel1.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(179, 0, 94));
         jLabel1.setText("Password");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(110, 160, 90, 40);
+        jLabel1.setBounds(300, 160, 90, 40);
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(179, 0, 94));
         jLabel2.setText("Username");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(110, 110, 90, 40);
+        jLabel2.setBounds(300, 110, 90, 40);
 
         jLabel3.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(87, 10, 87));
         jLabel3.setText("Login");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(200, 40, 70, 40);
+        jLabel3.setBounds(445, 40, 70, 40);
 
-        username.setBackground(new java.awt.Color(0, 0, 0));
+        username.setBackground(new java.awt.Color(255, 95, 158));
         username.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         username.setForeground(new java.awt.Color(255, 255, 255));
         username.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -86,30 +88,29 @@ public class Login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(username);
-        username.setBounds(200, 120, 160, 31);
+        username.setBounds(400, 120, 160, 25);
 
-        password.setBackground(new java.awt.Color(0, 0, 0));
+        password.setBackground(new java.awt.Color(255, 95, 158));
         password.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         password.setForeground(new java.awt.Color(255, 255, 255));
         password.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(password);
-        password.setBounds(200, 170, 160, 30);
+        password.setBounds(400, 170, 160, 30);
 
-        loginButton.setBackground(new java.awt.Color(153, 0, 0));
-        loginButton.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        loginButton.setForeground(new java.awt.Color(0, 0, 0));
+        loginButton.setBackground(new java.awt.Color(179, 0, 94));
+        loginButton.setFont(new java.awt.Font("sansserif", 3, 14)); // NOI18N
         loginButton.setText("Exit");
+        //loginButton.updateUI();
         loginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginButtonActionPerformed(evt);
             }
         });
         jPanel1.add(loginButton);
-        loginButton.setBounds(110, 250, 120, 40);
+        loginButton.setBounds(320, 250, 120, 40);
 
         loginButton1.setBackground(new java.awt.Color(0, 153, 0));
         loginButton1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        loginButton1.setForeground(new java.awt.Color(0, 0, 0));
         loginButton1.setText("Login");
         loginButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,11 +118,13 @@ public class Login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(loginButton1);
-        loginButton1.setBounds(240, 250, 120, 40);
+        loginButton1.setBounds(520, 250, 120, 40);
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizapp/ui/login-page.jpg"))); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizapp/ui/Quiz_app_bg.jpg"))); // NOI18N
+        background.setBackground(new java.awt.Color(6, 0, 71));
         jPanel1.add(background);
-        background.setBounds(0, 0, 480, 360);
+        background.setPreferredSize(new Dimension(480*2, 360*2));
+        background.setBounds(0, 0, 480*2, 360*2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

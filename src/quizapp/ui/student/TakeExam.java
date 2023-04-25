@@ -12,15 +12,8 @@ import repositories.StudentRepository;
 import services.QuestionService;
 import services.StudentService;
 
-/**
- *
- * @author x
- */
 public class TakeExam extends javax.swing.JFrame {
 
-    /**
-     * Creates new form TakeExam
-     */
     private final  String username;
     private int myScore;
     private int currentQuestionNumber;
@@ -105,46 +98,46 @@ public class TakeExam extends javax.swing.JFrame {
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(375, 880));
-        setMinimumSize(new java.awt.Dimension(375, 880));
+        setMaximumSize(new java.awt.Dimension(480*2, 360*2));
+        setMinimumSize(new java.awt.Dimension(480*2, 360*2));
         setResizable(false);
 
-        jPanel1.setMaximumSize(new java.awt.Dimension(375, 880));
-        jPanel1.setMinimumSize(new java.awt.Dimension(375, 880));
+        jPanel1.setMaximumSize(new java.awt.Dimension(480*2, 360*2));
+        jPanel1.setMinimumSize(new java.awt.Dimension(480*2, 360*2));
         jPanel1.setLayout(null);
 
         finishLabel.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         finishLabel.setForeground(new java.awt.Color(255, 255, 255));
         finishLabel.setText("Press finish button to finish the exam");
         jPanel1.add(finishLabel);
-        finishLabel.setBounds(10, 710, 270, 20);
+        finishLabel.setBounds(100, 710, 270, 20);
 
         question.setBackground(new java.awt.Color(0, 0, 0));
         question.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.add(question);
-        question.setBounds(10, 90, 350, 100);
+        question.setBounds(100, 90, 350, 100);
 
         optionA.setBackground(new java.awt.Color(0, 0, 0));
         optionA.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.add(optionA);
-        optionA.setBounds(10, 240, 350, 50);
+        optionA.setBounds(100, 240, 350, 50);
 
         jLabel4.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("(A)");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(10, 220, 70, 20);
+        jLabel4.setBounds(100, 220, 70, 20);
 
         optionB.setBackground(new java.awt.Color(0, 0, 0));
         optionB.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.add(optionB);
-        optionB.setBounds(10, 320, 350, 50);
+        optionB.setBounds(100, 320, 350, 50);
 
         jLabel6.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("(B)");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(10, 300, 70, 20);
+        jLabel6.setBounds(100, 300, 70, 20);
 
         jLabel7.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
@@ -155,30 +148,30 @@ public class TakeExam extends javax.swing.JFrame {
         optionC.setBackground(new java.awt.Color(0, 0, 0));
         optionC.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.add(optionC);
-        optionC.setBounds(10, 400, 350, 50);
+        optionC.setBounds(100, 400, 350, 50);
 
         jLabel9.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("(C)");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(10, 380, 70, 20);
+        jLabel9.setBounds(100, 380, 70, 20);
 
         optionD.setBackground(new java.awt.Color(0, 0, 0));
         optionD.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.add(optionD);
-        optionD.setBounds(10, 490, 350, 50);
+        optionD.setBounds(100, 490, 350, 50);
 
         jLabel11.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("(D)");
         jPanel1.add(jLabel11);
-        jLabel11.setBounds(10, 470, 70, 20);
+        jLabel11.setBounds(100, 470, 70, 20);
 
         jLabel12.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Question");
         jPanel1.add(jLabel12);
-        jLabel12.setBounds(10, 70, 70, 20);
+        jLabel12.setBounds(100, 70, 70, 20);
 
         answer.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         answer.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "a", "b", "c", "d" }));
@@ -188,7 +181,7 @@ public class TakeExam extends javax.swing.JFrame {
             }
         });
         jPanel1.add(answer);
-        answer.setBounds(10, 600, 340, 29);
+        answer.setBounds(100, 600, 340, 29);
 
         finish.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         finish.setForeground(new java.awt.Color(0, 0, 0));
@@ -199,13 +192,13 @@ public class TakeExam extends javax.swing.JFrame {
             }
         });
         jPanel1.add(finish);
-        finish.setBounds(10, 740, 340, 31);
+        finish.setBounds(100, 740, 340, 31);
 
         scoreLabel.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         scoreLabel.setForeground(new java.awt.Color(255, 255, 255));
         scoreLabel.setText("Score :");
         jPanel1.add(scoreLabel);
-        scoreLabel.setBounds(10, 800, 50, 20);
+        scoreLabel.setBounds(100, 800, 50, 20);
 
         submit.setBackground(new java.awt.Color(51, 153, 0));
         submit.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
@@ -217,22 +210,22 @@ public class TakeExam extends javax.swing.JFrame {
             }
         });
         jPanel1.add(submit);
-        submit.setBounds(10, 640, 340, 31);
+        submit.setBounds(100, 640, 340, 31);
 
         jLabel14.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Answer");
         jPanel1.add(jLabel14);
-        jLabel14.setBounds(10, 570, 70, 20);
+        jLabel14.setBounds(100, 570, 70, 20);
 
         score.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         score.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.add(score);
         score.setBounds(70, 790, 70, 40);
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizapp/ui/student/takeExam-page.jpg"))); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizapp/ui/student/Quiz_app_bg.jpg"))); // NOI18N
         jPanel1.add(background);
-        background.setBounds(0, 0, 380, 880);
+        background.setBounds(0, 0, 480*2, 360*2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

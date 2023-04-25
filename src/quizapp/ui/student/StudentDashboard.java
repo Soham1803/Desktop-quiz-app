@@ -67,9 +67,9 @@ public class StudentDashboard extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(190, 170, 90, 50);
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizapp/ui/student/studentDashboard-page.jpg"))); // NOI18N
-        background.setMaximumSize(new java.awt.Dimension(480, 360));
-        background.setMinimumSize(new java.awt.Dimension(480, 360));
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizapp/ui/student/Quiz_app_bg.jpg"))); // NOI18N
+        background.setMaximumSize(new java.awt.Dimension(480*2, 360*2));
+        background.setMinimumSize(new java.awt.Dimension(480*2, 360*2));
         background.setName(""); // NOI18N
         jPanel1.add(background);
         background.setBounds(0, 0, 480, 360);

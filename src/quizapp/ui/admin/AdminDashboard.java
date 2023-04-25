@@ -34,18 +34,18 @@ public class AdminDashboard extends javax.swing.JFrame {
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(480, 360));
-        setMinimumSize(new java.awt.Dimension(480, 360));
+        setMaximumSize(new java.awt.Dimension(480*2, 360*2));
+        setMinimumSize(new java.awt.Dimension(480*2, 360*2));
 
-        jPanel1.setMaximumSize(new java.awt.Dimension(480, 360));
-        jPanel1.setMinimumSize(new java.awt.Dimension(480, 360));
+        jPanel1.setMaximumSize(new java.awt.Dimension(480*2, 360*2));
+        jPanel1.setMinimumSize(new java.awt.Dimension(480*2, 360*2));
         jPanel1.setLayout(null);
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(6, 0, 71));
         jLabel2.setText("Admin Dashboard");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(140, 30, 210, 40);
+        jLabel2.setBounds(375, 30+100, 210, 40);
 
         viewResult.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         viewResult.setForeground(new java.awt.Color(0, 0, 0));
@@ -56,7 +56,7 @@ public class AdminDashboard extends javax.swing.JFrame {
             }
         });
         jPanel1.add(viewResult);
-        viewResult.setBounds(160, 240, 160, 50);
+        viewResult.setBounds(400, 240+100, 160, 50);
 
         addStudent.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         addStudent.setForeground(new java.awt.Color(0, 0, 0));
@@ -67,7 +67,7 @@ public class AdminDashboard extends javax.swing.JFrame {
             }
         });
         jPanel1.add(addStudent);
-        addStudent.setBounds(160, 100, 160, 50);
+        addStudent.setBounds(400, 100+100, 160, 50);
 
         addQuestion.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         addQuestion.setForeground(new java.awt.Color(0, 0, 0));
@@ -78,14 +78,14 @@ public class AdminDashboard extends javax.swing.JFrame {
             }
         });
         jPanel1.add(addQuestion);
-        addQuestion.setBounds(160, 170, 160, 50);
+        addQuestion.setBounds(400, 170+100, 160, 50);
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizapp/ui/admin/adminDashboard-page.jpg"))); // NOI18N
-        background.setMaximumSize(new java.awt.Dimension(480, 360));
-        background.setMinimumSize(new java.awt.Dimension(480, 360));
-        background.setPreferredSize(new java.awt.Dimension(480, 360));
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizapp/ui/admin/Quiz_app_bg.jpg"))); // NOI18N
+        background.setMaximumSize(new java.awt.Dimension(480*2, 360*2));
+        background.setMinimumSize(new java.awt.Dimension(480*2, 360*2));
+        background.setPreferredSize(new java.awt.Dimension(480*2, 360*2));
         jPanel1.add(background);
-        background.setBounds(0, 0, 480, 360);
+        background.setBounds(0, 0, 480*2, 360*2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

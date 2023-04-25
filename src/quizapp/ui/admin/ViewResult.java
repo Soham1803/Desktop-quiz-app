@@ -99,9 +99,9 @@ public class ViewResult extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(240, 370, 140, 50);
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizapp/ui/admin/viewResult-page.jpg"))); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quizapp/ui/admin/Quiz_app_bg.jpg"))); // NOI18N
         jPanel1.add(background);
-        background.setBounds(0, 0, 640, 480);
+        background.setBounds(0, 0, 480*2, 360*2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
